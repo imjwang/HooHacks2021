@@ -2,20 +2,45 @@ import Nav from "../components/navbar.js"
 import Forms from "../components/forms.js"
 import Table from "../components/table.js"
 import React from "React"
+import { Calc } from "../components/calc.js"
 
 class Home extends React.Component {
     state = {
       tbl: null,
       bat: 0,
-      t: 0
+      t: 0,
     }
-  
+
+    data = {
+        a : 1,
+        b : 2,
+        c : 3,
+        d : 4,
+        e : 5,
+        f : 6,
+        g : 7,
+        h : 8,
+        i : 9,
+        j : 10,
+        k : 11,
+        l : 12,
+        m : 13,
+        n : 14,
+        o : 15,
+        p : 16,
+        q : 17,
+        r : 18,
+        s : 19,
+        t : 20
+    }
+
+
     handleChangeB = (event) => {this.setState({bat: event.target.value})};
     handleChangeT = (event) => {this.setState({t: event.target.value})};
 
     renderTbl = () => {
       this.setState({
-        tbl : <Table battery={this.state.bat} time={this.state.t}/>
+        tbl : <Calc battery={this.state.bat} time={this.state.t} json={this.data} />
       })
     }
       render() {
@@ -24,9 +49,9 @@ class Home extends React.Component {
             <Nav />
         <section className="section">
             
-            <div class="columns">
+            <div className="columns">
 
-                <div class="column">
+                <div className="column">
 
                     <h1 className="title is-1">Prediction</h1>
                     <h3 className="title is-3">How to Use</h3>
@@ -55,7 +80,7 @@ class Home extends React.Component {
 
                 </div>
 
-                <div class="column">
+                <div className="column">
                 
                     {this.state.tbl}
 
