@@ -1,5 +1,6 @@
 import Nav from "../components/navbar.js"
 import Forms from "../components/forms.js"
+import Table from "../components/table.js"
 
 export default function Home() {
     return (
@@ -25,7 +26,7 @@ export default function Home() {
 
                 <div class="column">
                 
-                
+                    <Table />
 
                 </div>
 
