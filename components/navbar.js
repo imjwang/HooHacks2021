@@ -7,12 +7,12 @@ export default function Nav(){
 
   <div id="navbarBasicExample" className="navbar-menu">
     <div className="navbar-start">
-      <a className="navbar-item">
+      <a className="navbar-item" href="/">
         Home
       </a>
 
-      <a className="navbar-item">
-        Documentation
+      <a className="navbar-item" href="/prediction">
+        Prediction
       </a>
 
       <div className="navbar-item has-dropdown is-hoverable">

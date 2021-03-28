@@ -5,7 +5,7 @@ export default function Box(){
   <h3 className="title is-3">Get Started!!!!!</h3>
   <p>This is some text here.</p>
 
-  <a className="button is-link is-large is-fullwidth" href="/sample_page">CLICK ME</a>
+  <a className="button is-link is-large is-fullwidth" href="/prediction">CLICK ME</a>
 
 
 
