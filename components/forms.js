@@ -26,7 +26,7 @@ export default function Forms(){
 
 
 
-  <button className="button is-primary">GENERATE</button>
+
 </form>
     )
 }
